@@ -1,0 +1,121 @@
+/* nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+nav img{
+    height: 3rem;
+} */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+body{
+    background-color: var(--Very-dark-blue);
+    display: flex;justify-content: center;align-items: center;height: 100vh;
+    overflow: hidden;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,10rem);
+    grid-template-rows: repeat(2,10rem);
+    gap: 1rem;
+    color: white;
+}
+.user{
+    grid-row: span 2;
+    background-color: var(--Dark-blue);border-radius: 1rem;
+}
+.user_top{
+    height: 70%;background-color: var(--Blue);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.user img{
+    width: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.rep{
+    font-size: .5rem;
+}
+.name{
+    font-size: 2rem;
+}
+.pro_bottom{
+    padding: 1rem;font-size: .8rem;
+}
+.blur{
+    color: hsl(235, 38%, 31%);
+}
+.show{
+    color: var(--Desaturated-blue);
+}
+
+.small_ones{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.work{
+    background-color: var(--Light-red-work);
+}
+.mini{
+    background-color: var(--Dark-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    top: 20%;
+}
+.mini_top{
+    display: flex;justify-content: space-between;
+    align-items: center;
+    height: 80%;
+}
+.min_mid{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.mid_bot{
+    font-size: .7rem;
+}
+.pic{
+    width: 4rem;
+    position: absolute;
+    top: -10%;
+    right: 1rem;
+}
+.play{
+    background-color: var(--Soft-blue-play);
+}
+.exer{
+    background-color: var(--Lime-green-exercise);
+}
+.study{
+    background-color: var(--Light-red-study);
+}
+.self{
+    background-color: var(--Soft-orange-self-care);
+}
+.social{
+    background-color: var(--Violet-social);
+}
